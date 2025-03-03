@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #533c3c;
+}
+
+
+.container{
+    height: 60px;
+    width: 400px;
+}
+
+#input-password{
+    height: 50%;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+.input-password-pop{
+    padding: 5px 10px;
+}
