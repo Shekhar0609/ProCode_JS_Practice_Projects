@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #7b7bb8;
+  color: white;
+}
+
+.animation-container {
+  padding: 0 10px;
+}
+
+.character {
+  font-size: 50px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.active {
+  animation: jumping 2s ease-in-out both;
+}
+
+@keyframes jumping {
+  0% {
+    transform: translate(0, 0) rotate(0) scale(1);
+  }
+  
+  50% {
+    transform: translate(0, -180px) rotate(-360deg) scale(2);
+  }
+
+  100% {
+    transform: translate(0) rotate(0) scale(1);
+  }
+
+}
