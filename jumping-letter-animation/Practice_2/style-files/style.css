@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #59c298;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  padding: 5px 10px;
+}
+
+.character {
+  font-size: 50px;
+  font-weight: 600;
+  display: inline-block;
+  cursor: pointer;
+
+}
+
+.character.active {
+  animation: JumpLetter 2s ease-in-out both;
+}
+
+@keyframes JumpLetter {
+  0% {
+    transform: translate(0) rotate(0) scale(1);
+  }
+  
+  50% {
+    color: #59c298;
+    text-shadow: 2px -2px black;
+    transform: translate(0, -200px) rotate(-360deg) scale(2.5);
+  }
+
+  100% {
+    transform: translate(0) rotate(0) scale(1);
+  }
+}
