@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App using Javascript</title>
+    <link rel="stylesheet" href="style-files/style.css">
+</head>
+
+<body>
+    <form class="container">
+        <div class="quiz-container">
+            <h2 class="question">question</h2>
+
+            <div class="answer-container">
+                <!-- input are inline element and label are block element. CSS using in the answer-container display flex -->
+                <div> 
+                    <input type="radio" name="quiz-option" id="Answer1">
+                    <label class="answer1" for="Answer1">Answer1</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="quiz-option" id="Answer2">
+                    <label class="answer2" for="Answer2">Answer2</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="quiz-option" id="Answer3">
+                    <label class="answer3" for="Answer3">Answer3</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="quiz-option" id="Answer4">
+                    <label class="answer4" for="Answer4">Answer4</label>
+                </div>
+            </div>
+        </div>
+        <button class="submit-btn">submit</button>
+    </form>
+
+    <script src="script-files/script.js"></script>
+</body>
+
+</html>
