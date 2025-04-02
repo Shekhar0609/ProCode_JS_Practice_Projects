@@ -25,8 +25,8 @@ searchBtn.addEventListener("click", async function () {
   } catch (error) {
     error =
       "An error occurred while fetching the definition. Please try again.";
-    if (inputField.value === "") {
-      definitionEL.textContent = "Please enter a word";
+    if (inputField.value === "") { // check if the input field is empty
+      definitionEL.textContent = "Please enter a word to search."; // display a message if the input field is empty
       return; // check if the input field is empty and display a message if it is
     }
 
