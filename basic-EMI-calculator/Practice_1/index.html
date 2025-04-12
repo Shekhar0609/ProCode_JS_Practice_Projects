@@ -9,29 +9,29 @@
     <script type="module" src="./src/js/main-script.js"></script>
 </head>
 
-<body class="bg-cyan-400 h-screen flex justify-center items-center">
+<body class="bg-amber-100 h-screen flex justify-center items-center">
     <div id="container"
-        class="bg-white rounded-lg shadow-lg px-4 py-6 w-90 h-90 flex flex-col justify-between items-center text-center">
+        class="bg-white rounded-lg shadow-xl px-4 py-6 w-90 h-90 flex flex-col justify-between items-center text-center">
         <h2 class="font-bold text-2xl w-full">EMI Calculator</h2>
         <div id="principle-amount-container" class="w-full bg-red-300 text-center">
             <p class="my-1.5">Loan Amount:</p>
             <input type="number" id="principle-amount"
-                class="w-full border-1 rounded-md outline-none focus:ring-1 focus:ring-blue-3feat00">
+                class="w-full border-1 px-2 rounded-md outline-none focus:ring-1 focus:ring-blue-3feat00">
         </div>
 
         <div id="interest-rate-container" class="w-full">
             <p class="my-1.5">Interest Rate:</p>
             <input type="number" id="interest-rate"
-                class="w-full border-1 rounded-md outline-none focus:ring-1 focus:ring-blue-3feat00">
+                class="w-full border-1 px-2 rounded-md outline-none focus:ring-1 focus:ring-blue-3feat00">
         </div>
 
         <div id="tenure-container" class="w-full">
-            <p class="my-1.5">Loan Amount:</p>
+            <p class="my-1.5">Tenure:</p>
             <input type="number" id="tenure"
-                class="w-full border-1 rounded-md outline-none focus:ring-1 focus:ring-blue-3feat00">
+                class="w-full border-1 px-2 rounded-md outline-none focus:ring-1 focus:ring-blue-3feat00">
         </div>
 
-        <button id="calculate-btn">Calculate</button>
+        <button id="calculate-btn" class="bg-red-500 px-4 py-1 text-white rounded-lg cursor-pointer active:scale-95 duration-50">Calculate</button>
 
         <div id="output">Your Monthly Payment is: <span id="mothly-emi">13323.3</span></div>
     </div>
