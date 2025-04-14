@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic EMI Calculator</title>
-    <link href="./src/css/output.css" rel="stylesheet">
-    <script type="module" src="./src/js/main-script.js"></script>
+    <link rel="stylesheet" href="./src/css/output.css">
+    <script type="module" src="src/js/main-script.js"></script>
 </head>
 
-<body class="bg-amber-100 h-screen flex justify-center items-center">
+<body class="bg-[#e07a5f] h-screen flex justify-center items-center">
     <div id="container"
-        class="bg-white rounded-lg shadow-xl mx-5 px-4 py-6 w-90 flex flex-col justify-between items-center gap-2 text-center">
+        class="bg-[#3d405b] rounded-lg shadow-xl mx-5 px-4 py-6 w-90 flex flex-col justify-between items-center gap-2 text-center text-white">
         <h2 class="font-bold text-2xl w-full">EMI Calculator</h2>
         <div id="principle-amount-container" class="w-full text-center">
             <p class="my-1.5">Loan Amount:</p>
@@ -32,10 +32,11 @@
         </div>
 
         <button id="calculate-btn"
-            class="bg-red-500 px-4 py-1 text-white rounded-lg cursor-pointer active:scale-95 duration-50">Calculate</button>
+            class="bg-red-500 px-4 py-1 text-lg rounded-lg cursor-pointer active:scale-95 duration-50">Calculate</button>
 
         <div id="output">Your Monthly Payment is: <span id="mothly-emi"></span></div>
     </div>
 </body>
+
 
 </html>
