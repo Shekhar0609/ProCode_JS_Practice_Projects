@@ -20,6 +20,7 @@
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
     --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
     --default-font-family: var(--font-sans);
@@ -255,23 +256,14 @@
   .bg-\[\#3d405b\] {
     background-color: #3d405b;
   }
+  .bg-\[\#434557\] {
+    background-color: #434557;
+  }
   .bg-\[\#e07a5f\] {
     background-color: #e07a5f;
   }
-  .bg-\[\#f4f1de\] {
-    background-color: #f4f1de;
-  }
-  .bg-\[f4f1de\] {
-    background-color: f4f1de;
-  }
-  .bg-amber-100 {
-    background-color: var(--color-amber-100);
-  }
   .bg-red-500 {
     background-color: var(--color-red-500);
-  }
-  .bg-white {
-    background-color: var(--color-white);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -281,12 +273,6 @@
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
-  }
-  .py-1\.5 {
-    padding-block: calc(var(--spacing) * 1.5);
-  }
-  .py-2 {
-    padding-block: calc(var(--spacing) * 2);
   }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
@@ -302,17 +288,13 @@
     font-size: var(--text-lg);
     line-height: var(--tw-leading, var(--text-lg--line-height));
   }
-  .text-sm {
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
-  }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-extrabold {
+    --tw-font-weight: var(--font-weight-extrabold);
+    font-weight: var(--font-weight-extrabold);
   }
   .text-white {
     color: var(--color-white);
