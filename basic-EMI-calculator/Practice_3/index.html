@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic EMI Calculator</title>
+    <link rel="stylesheet" href="./src/css/output.css">
+    <script type="module" src="./src/js/main-script.js"></script>
+</head>
+
+<body class="bg-[#bd5b40] h-screen flex justify-center items-center">
+    <div id="container"
+        class="bg-[#31365f] rounded-lg shadow-xl mx-5 px-4 py-6 w-90 flex flex-col justify-between items-center gap-2 text-center text-white">
+        <h2 class="font-bold text-2xl w-full">EMI Calculator</h2>
+        <div id="principle-amount-container" class="w-full text-center">
+            <p class="my-1.5">Loan Amount:</p>
+            <input type="number" id="loan-amount"
+                class="w-full border-1 px-2 rounded-md outline-none focus:ring-1 focus:ring-blue-3feat00">
+        </div>
+
+        <div id="interest-rate-container" class="w-full">
+            <p class="my-1.5">Interest Rate (in %):</p>
+            <input type="number" id="interest-rate"
+                class="w-full border-1 px-2 rounded-md outline-none focus:ring-1 focus:ring-blue-3feat00">
+        </div>
+
+        <div id="tenure-container" class="w-full">
+            <p class="my-1.5">Tenure(In Years):</p>
+            <input type="number" id="loan-tenure"
+                class="w-full border-1 px-2 rounded-md outline-none focus:ring-1 focus:ring-blue-3feat00">
+        </div>
+
+        <button id="calculate-btn"
+            class="bg-red-500 px-4 py-1 text-lg rounded-lg cursor-pointer active:scale-95 duration-50">Calculate</button>
+
+        <div id="result-container">Your Monthly Payment is: <span id="emi-result"></span></div>
+    </div>
+</body>
+
+
+</html>
