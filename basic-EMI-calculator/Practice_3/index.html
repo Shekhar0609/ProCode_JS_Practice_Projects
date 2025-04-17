@@ -31,8 +31,12 @@
                 class="w-full border-1 px-2 rounded-md outline-none focus:ring-1 focus:ring-blue-3feat00">
         </div>
 
-        <button id="calculate-btn"
-            class="bg-red-500 px-4 py-1 text-lg rounded-lg cursor-pointer active:scale-95 duration-50">Calculate</button>
+        <div id="btn-container" class="w-full flex justify-between items-center my-1.5">
+            <button id="calculate-btn"
+                class="bg-red-500 px-4 py-1 text-lg rounded-lg cursor-pointer active:scale-95 duration-50">Calculate</button>
+            <button id="clear-btn"
+                class="bg-red-500 px-4 py-1 text-lg rounded-lg cursor-pointer active:scale-95 duration-50">Clear</button>
+        </div>
 
         <div id="result-container">Your Monthly Payment is: <span id="emi-result"></span></div>
     </div>
