@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+    <link rel="stylesheet" href="./src/css/output.css">
+    <script type="module" src="src/js/main-script.js"></script>
+</head>
+
+<body class="bg-[#404c6a] flex flex-col items-center justify-center h-screen">
+    <div id="container" class="bg-[#1c2a4e] rounded-lg shadow-lg p-6 w-96 text-center text-gray-200">
+        <h2 id="title" class="text-2xl font-bold">Tip Calculator</h2>
+        <div id="bill-amt-container" class="mt-4 flex flex-col items-center gap-1 w-full">
+            <label for="" id="bill-amount-title">Bill Amount</label>
+            <input type="number" id="input-bill" class="w-full px-3 py-1 rounded-md border border-gray-400"
+                placeholder="Enter bill amount" required>
+        </div>
+
+        <div id="tip-percentage-container" class="mt-4 flex flex-col items-center gap-1 w-full">
+            <label for="" id="tip-percentage-title">Tip Percentage</label>
+            <input type="number" id="input-tip-percentage" class="w-full px-3 py-1 rounded-md border border-gray-400"
+                placeholder="Enter Tip Percentage" required>
+        </div>
+
+        <div id="btn-container" class="mt-4 flex justify-evenly items-center gap-2 w-full">
+            <button id="calculate-btn"
+                class="bg-violet-600 rounded-md px-3 py-1 text-white hover:bg-black hover:text-white active:scale-90 ease-in duration-75 cursor-pointer">Calculate</button>
+            <button id="clear-btn"
+                class="bg-violet-600 rounded-md px-3 py-1 text-white hover:bg-black hover:text-white active:scale-90 ease-in duration-75 cursor-pointer">Clear</button>
+        </div>
+
+        <div id="result-container" class="mt-4 flex flex-col items-center gap-1 w-full">
+            <h3 id="result-title">Tip Amount : <span id="total-amt">₹1000</span></h3>
+        </div>
+</body>
+
+</html>
