@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="./src/css/output.css">
+    <script type="module" src="src/js/main-style.js"></script>
+</head>
+
+<body class="bg-emerald-600 flex flex-col items-center justify-center h-screen">
+    <div id="container" class="bg-lime-400 rounded-lg shadow-lg p-6 w-96 text-center text-black-200">
+        <h2 id="title" class="text-2xl font-bold">Tip Calculator</h2>
+        <div id="bill-amt-container" class="mt-4 flex flex-col items-center gap-1 w-full">
+            <label for="" id="bill-amount-title">Bill Amount</label>
+            <input type="number" id="input-bill" class="w-full px-3 py-1 rounded-md border border-gray-400"
+                placeholder="Enter bill amount" required>
+        </div>
+
+        <div id="tip-percentage-container" class="mt-4 flex flex-col items-center gap-1 w-full">
+            <label for="" id="tip-percentage-title">Tip Percentage</label>
+            <input type="number" id="input-tip-percentage" class="w-full px-3 py-1 rounded-md border border-gray-400"
+                placeholder="Enter Tip Percentage" required>
+        </div>
+
+        <div id="btn-container" class="mt-4 flex justify-evenly items-center gap-2 w-full">
+            <button id="calculate-btn"
+                class="bg-emerald-600 rounded-md px-3 py-1 text-black hover:bg-white hover:text-black active:scale-90 ease-in duration-75 cursor-pointer">Calculate</button>
+            <button id="clear-btn"
+                class="bg-emerald-600 rounded-md px-3 py-1 text-black hover:bg-white hover:text-black active:scale-90 ease-in duration-75 cursor-pointer">Clear</button>
+        </div>
+
+        <div id="result-container" class="mt-4 flex flex-col items-center gap-1 w-full">
+            <h3 id="bill-amt-container">Bill Amount : <span id="total-amt" class="font-bold">₹1000</span></h3>
+            <h3 id="tip-percentage-container">Tip Amount : <span id="tip-amt" class="font-bold">₹1000</span></h3>
+            <h3 id="total-amt-container">Total Amount : <span id="total-amt" class="font-bold">₹1000</span></h3>
+        </div>
+</body>
+
+</html>
