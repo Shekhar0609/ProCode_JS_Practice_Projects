@@ -9,8 +9,21 @@
     <script type="module" src="./src/js/main-script.js"></script>
 </head>
 
-<body>
-
+<body class="bg-gray-300 flex items-center justify-center h-screen">
+    <div id="container" class="bg-white shadow-lg rounded-lg p-5 w-1/3">
+        <h1 class="text-3xl font-bold text-center">Counter App</h1>
+        <div class="counter-container flex justify-between items-center mt-5">
+            <button id="decrement" title="Decrement Counter"
+                class="bg-red-500 text-white px-4 py-2 rounded cursor-pointer active:scale-90 duration-75">-</button>
+            <span id="counter" class="mx-6 text-2xl">0</span>
+            <button id="increment" title="Increment Counter"
+                class="bg-green-500 text-white px-4 py-2 rounded cursor-pointer active:scale-90 duration-75">+</button>
+        </div>
+        <div class="mt-5 text-center">
+            <button id="reset" title="Reset Counter"
+                class="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer active:scale-90 duration-75">Reset</button>
+        </div>
+    </div>
 </body>
 
 </html>
