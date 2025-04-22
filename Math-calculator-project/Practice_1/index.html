@@ -9,7 +9,86 @@
     <script type="module" src="./src/js/main-script.js"></script>
 </head>
 
-<body>
-    
+
+<body class="bg-gray-900 text-white flex justify-center items-center h-screen">
+    <div id="calculator-container" class="bg-gray-800 rounded-lg shadow-lg p-6 max-w-90">
+        <div mt-6 id="display" class="bg-gray-700 text-white rounded-lg p-6">
+            <input type="text" id="input" value="6789" class="text-right w-full text-xl" disabled>
+        </div>
+        <div id="buttons" class="flex justify-around items-center mt-6 gap-2 text-xl">
+            <button
+                class="uppercase bg-orange-600 hover:bg-orange-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-5 py-1 cursor-pointer"
+                id="clear">ac</button>
+            <button
+                class="uppercase bg-gray-700 hover:bg-gray-500 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-4 py-1 cursor-pointer"
+                id="delete">del</button>
+            <button
+                class=" bg-gray-700 hover:bg-gray-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-6 py-1 cursor-pointer"
+                id="divide">/</button>
+            <button
+                class=" bg-gray-700 hover:bg-gray-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-6 py-1 cursor-pointer"
+                id="percentage">%</button>
+        </div>
+
+        <div id="buttons" class="flex justify-around items-center gap-2 text-xl">
+            <button
+                class=" bg-gray-700 hover:bg-gray-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-6 py-1 cursor-pointer"
+                id="one">1</button>
+            <button
+                class=" bg-gray-700 hover:bg-gray-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-6 py-1 cursor-pointer"
+                id="two">2</button>
+            <button
+                class=" bg-gray-700 hover:bg-gray-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-6 py-1 cursor-pointer"
+                id="three">3</button>
+            <button
+                class=" bg-gray-700 hover:bg-gray-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-6 py-1 cursor-pointer"
+                id="multiply">*</button>
+        </div>
+
+        <div id="buttons" class="flex justify-around items-center gap-2 text-xl">
+            <button
+                class=" bg-gray-700 hover:bg-gray-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-6 py-1 cursor-pointer"
+                id="four">6</button>
+            <button
+                class=" bg-gray-700 hover:bg-gray-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-6 py-1 cursor-pointer"
+                id="five">5</button>
+            <button
+                class=" bg-gray-700 hover:bg-gray-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-6 py-1 cursor-pointer"
+                id="six">6</button>
+            <button
+                class=" bg-gray-700 hover:bg-gray-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-6 py-1 cursor-pointer"
+                id="subtract">-</button>
+        </div>
+
+        <div id="buttons" class="flex justify-around items-center gap-2 text-xl">
+            <button
+                class=" bg-gray-700 hover:bg-gray-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-6 py-1 cursor-pointer"
+                id="seven">7</button>
+            <button
+                class=" bg-gray-700 hover:bg-gray-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-6 py-1 cursor-pointer"
+                id="eight">8</button>
+            <button
+                class=" bg-gray-700 hover:bg-gray-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-6 py-1 cursor-pointer"
+                id="nine">9</button>
+            <button
+                class=" bg-gray-700 hover:bg-gray-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-6 py-1 cursor-pointer"
+                id="add">+</button>
+        </div>
+
+        <div id="buttons" class="flex justify-around items-center gap-2 text-xl">
+            <button
+                class=" bg-gray-700 hover:bg-gray-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-6 py-1 cursor-pointer"
+                id="double-zero">00</button>
+            <button
+                class=" bg-gray-700 hover:bg-gray-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-6 py-1 cursor-pointer"
+                id="sigle-zero">0</button>
+            <button
+                class=" bg-gray-700 hover:bg-gray-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-6 py-1 cursor-pointer"
+                id="decimal">.</button>
+            <button
+                class=" bg-gray-700 hover:bg-gray-400 active:scale-90 duration-75 w-full mt-2 shadow-xl rounded-lg px-6 py-1 cursor-pointer"
+                id="equals">=</button>
+        </div>
 </body>
+
 </html>
