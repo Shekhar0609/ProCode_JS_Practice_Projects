@@ -1,3 +1,17 @@
 {
-    "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "liveServer.settings.ignoreFiles": [
+    ".vscode/**",
+    "**/.git/**",
+    "**/.DS_Store/**",
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/coverage/**",
+    "**/out/**",
+    "**/tmp/**",
+    "**/temp/**",
+    "**/logs/**",
+    "**/log/**"
+  ]
 }
