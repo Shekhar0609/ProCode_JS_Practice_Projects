@@ -11,6 +11,6 @@ buttonEls.forEach((button) => {
       `./audios/${button.innerText.toLowerCase()}.mp3` // Set the source to the corresponding audio file based on button text
     );
     button.appendChild(audioEl); // Append the audio element to the button
-    audioEl.play();
+    audioEl.play(); // Play the audio
   });
 });
