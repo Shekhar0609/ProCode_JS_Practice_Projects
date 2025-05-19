@@ -12,5 +12,12 @@ buttonEls.forEach((button) => {
     );
     button.appendChild(audioEl); // Append the audio element to the button
     audioEl.play(); // Play the audio
+
+    audioEl.addEventListener("ended", () => {
+      // Add an event listener to remove the audio element when it ends
+      button.removeChild(audioEl); // Remove the audio element from the button
+    });
+    
   });
+
 });
