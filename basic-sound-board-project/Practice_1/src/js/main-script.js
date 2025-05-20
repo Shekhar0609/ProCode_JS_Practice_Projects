@@ -17,7 +17,5 @@ buttonEls.forEach((button) => {
       // Add an event listener to remove the audio element when it ends
       button.removeChild(audioEl); // Remove the audio element from the button
     });
-    
   });
-
 });
