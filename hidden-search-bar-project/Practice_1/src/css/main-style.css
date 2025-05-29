@@ -1,2 +1,21 @@
 @import "tailwindcss";
 
+#search-btn > .fa-magnifying-glass {
+  font-size: 20px;
+}
+
+#search-bar-container.active {
+  position: relative;
+  width: 40px;
+  transition: width 0.5s linear;
+}
+
+.active #search-input {
+  width: 0;
+  transition: width 0.5s linear;
+}
+
+.active #search-btn > .fa-magnifying-glass {
+  font-size: 18px;
+  transition: font-size 0.5s linear;
+}
