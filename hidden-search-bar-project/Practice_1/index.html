@@ -10,11 +10,14 @@
     <script type="module" src="./src/js/main-script.js"></script>
 </head>
 
-<body>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
 
-    <div id="search-bar-container">
-        <input type="text" id="search-input" placeholder="Search...">
-        <button id="search-btn"></button>
+    <div id="search-bar-container"
+        class="border-2 border-gray-500 rounded-4xl relative w-80 h-10 flex items-center justify-between bg-gray-100">
+        <input type="text" id="search-input" placeholder="Search..."
+            class="border-none bg-transparent w-full h-full text-left pl-4 absolute left-0 top-0 text-gray-900 focus:outline-none focus:ring-0">
+        <button id="search-btn" class="h-full absolute right-0 top-0 translate-x-[-50%] cursor-pointer"><i
+                class="fa-solid fa-magnifying-glass"></i></button>
     </div>
 </body>
 
