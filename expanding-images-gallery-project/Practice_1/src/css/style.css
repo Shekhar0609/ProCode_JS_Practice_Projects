@@ -1,10 +1,9 @@
 @import "tailwindcss";
 
-#image-container.active-img{
-width: 800px;
+#image-container.active-img {
+  flex-basis: 600px;
 }
 
-img[alt]{
+img[alt] {
   text-transform: capitalize;
 }
-
