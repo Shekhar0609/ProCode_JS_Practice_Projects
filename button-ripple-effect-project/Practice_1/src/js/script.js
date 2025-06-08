@@ -1,7 +1,6 @@
 const btnEl = document.querySelector("#btn");
 
 btnEl.addEventListener("click", (event) => {
-  console.log(btnEl);
   let spanEl = document.createElement("span");
   spanEl.className = "ripple absolute w-12 h-12 bg-gray-300 rounded-full";
   btnEl.appendChild(spanEl);
