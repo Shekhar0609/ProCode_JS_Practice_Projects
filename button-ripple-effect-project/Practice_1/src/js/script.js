@@ -7,10 +7,10 @@ btnEl.addEventListener("click", (event) => {
 
   btnEl.appendChild(spanEl); // Append the span to the button
   let rect = btnEl.getBoundingClientRect(); // Get the button's position and size
-  let x = event.clientX - rect.left - spanEl.offsetWidth / 2; // Calculate x position
-  let y = event.clientY - rect.top - spanEl.offsetHeight / 2; // Calculate y position
-  spanEl.style.left = `${x}px`; // Set the left position of the span
-  spanEl.style.top = `${y}px`; // Set the top position of the span
+  let xPos = event.clientX - rect.left - spanEl.offsetWidth / 2; // Calculate x positio
+  let yPos = event.clientY - rect.top - spanEl.offsetHeight / 2; // Calculate y position
+  spanEl.style.left = `${xPos}px`; // Set the left position of the spann
+  spanEl.style.top = `${yPos}px`; // Set the top position of the span
 
   spanEl.addEventListener("animationend", () => {
     // Add animation end event listener
