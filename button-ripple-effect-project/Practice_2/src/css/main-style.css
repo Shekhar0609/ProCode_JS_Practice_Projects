@@ -4,7 +4,7 @@
   overflow: hidden;
 }
 
-.ripple {
+#ripple {
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
   animation: ripple 0.6s ease-in-out;
 }
