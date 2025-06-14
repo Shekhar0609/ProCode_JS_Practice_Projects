@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@media screen and (max-width: 670px) {
+  #social-followers-container {
+    background-color: red;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    min-width: fit-content;
+  }
+}
