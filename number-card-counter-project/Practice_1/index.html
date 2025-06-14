@@ -9,23 +9,30 @@
     <link rel="stylesheet" href="./src/css/output.css">
 </head>
 
-<body>
-    <div id="social-followers-container">
-        <div id="follower-card">
-            <span id="logo"><i class="fa-brands fa-twitter"></i></span>
-            <span id="count">1000</span>
-            <span id="follower-social-name">Twiter Followers</span>
+<body class="bg-gray-100 flex items-center  justify-center  min-h-screen">
+    <div id="social-followers-container"
+        class="flex flex-wrap justify-center gap-4 p-6 bg-white rounded-lg min-w-150 min-h-50">
+        <div id="follower-card"
+            class="group bg-gray-500 text-white text-xl p-4 rounded-lg shadow-md flex flex-col gap-3 justify-evenly items-center min-w-40 h-full cursor-pointer hover:bg-gray-600 hover:shadow-black-700 transition duration-200 ease-in-out">
+            <span id="logo" class="text-4xl"><i class="fa-brands fa-twitter group-hover:text-[#1da1f2] transition duration-200"></i></span>
+            <span id="count" class="text-2xl">1000</span>
+            <span id="follower-social-name">Twitter Followers</span>
         </div>
 
-        <div id="follower-card">
-            <span id="logo"><i class="fa-brands fa-youtube"></i></i></span>
-            <span id="count">1000</span>
+        <div id="follower-card"
+            class="group bg-gray-500 text-white text-xl p-4 rounded-lg shadow-md flex flex-col gap-3 justify-evenly items-center min-w-40 h-full cursor-pointer hover:bg-gray-600 hover:shadow-black-700 transition duration-200 ease-in-out">
+            <span id="logo" class="text-4xl"><i class="fa-brands fa-youtube group-hover:text-[red] transition duration-200"></i></i></span>
+            <span id="count" class="text-2xl">1000</span>
             <span id="follower-social-name">Youtube Followers</span>
         </div>
 
-        <div id="follower-card">
-            <span id="logo"><i class="fa-brands fa-instagram"></i></span>
-            <span id="count">1000</span>
+        <div id="follower-card"
+            class="group bg-gray-500 text-white text-xl p-4 rounded-lg shadow-md flex flex-col gap-3 justify-evenly items-center min-w-40 h-full cursor-pointer hover:bg-gray-600 hover:shadow-black-700 transition duration-200 ease-in-out">
+            <span id="logo" class="text-4xl relative"><i
+                    class="fa-brands fa-instagram absolute top-[3.5px] group-hover:opacity-0 transition duration-200"></i>
+                <i
+                    class="fa-brands fa-instagram group-hover:bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] bg-clip-text text-transparent"></i></span>
+            <span id="count" class="text-2xl">1000</span>
             <span id="follower-social-name">Instagram Followers</span>
         </div>
     </div>
