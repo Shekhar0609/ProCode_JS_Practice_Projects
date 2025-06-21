@@ -1,4 +1,5 @@
 const numberElements = document.querySelectorAll('input[type="number"]');
+const submitButton = document.querySelector('button[type="submit"]');
 
 numberElements.forEach((element, idx) => {
   element.addEventListener("input", (event) => {
@@ -25,4 +26,18 @@ numberElements.forEach((element, idx) => {
       numberElements[idx - 1].focus();
     }
   });
+});
+
+submitButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  console.log(Array.from(numberElements));
+  const values = Array.from(numberElements)
+    .map((el) => el.value)
+    .join("");
+
+  if (values.length === numberElements.length) {
+    alert(`Submitted values: ${values}`);
+  } else {
+    alert("Please fill all fields.");
+  }
 });
