@@ -31,6 +31,20 @@ inputElements.forEach(function (element, index) {
       }
     });
 
+    submitBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const inputValues = Array.from(inputElements)
+        .map((input) => input.value)
+        .join("");
 
+      if (inputValues.length === inputElements.length) {
+        alert(`Submitted values: ${inputValues}`);
+        inputElements.forEach((input) => (input.value = ""));
+        inputElements[0].focus();
+        location.reload();
+      } else {
+        alert("Please fill all the inputs before submitting.");
+      }
+    });
   });
 });
