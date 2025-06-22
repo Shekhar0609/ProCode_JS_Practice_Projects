@@ -8,25 +8,37 @@
     <link rel="stylesheet" href="./src/css/output.css">
 </head>
 
-<body>
-    <div id="container">
-        <h2 id="heading">OTP Verification</h2>
-        <p id="instruction">We have sent you an email with a OTP to verify your account.Enter the code from the email
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div id="container" class="bg-white p-8 rounded-lg shadow-md w-100 flex items-center justify-center flex-col gap-6">
+        <h2 id="heading" class="font-bold capitalize text-3xl">verify your account</h2>
+        <p id="intruction" class="text-wrap text-justify">We have sent you an email with a OTP to verify your account.
+            Enter the code from the email
             below.</p>
-        <form action="" id="otp-form">
-            <div id="otp-inputs">
-                <input type="number" id="otp-1" placeholder="0" min="0" max="9" maxlength="1" required>
-                <input type="number" id="otp-2" placeholder="0" min="0" max="9" maxlength="1" required>
-                <input type="number" id="otp-3" placeholder="0" min="0" max="9" maxlength="1" required>
-                <input type="number" id="otp-4" placeholder="0" min="0" max="9" maxlength="1" required>
-                <input type="number" id="otp-5" placeholder="0" min="0" max="9" maxlength="1" required>
-                <input type="number" id="otp-6" placeholder="0" min="0" max="9" maxlength="1" required>
+        <form id="otp-form" class="flex flex-col items-center mt-6">
+            <div id="otp-inputs" class="flex space-x-2 mb-4 justify-center ">
+                <input type="number" placeholder="0" min="0" max="9" maxlength="1" id="otp-1"
+                    class="w-12 h-10 text-2xl text-center font-medium border rounded-md [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    required>
+                <input type="number" placeholder="0" min="0" max="9" maxlength="1" id="otp-2"
+                    class="w-12 h-10 text-2xl text-center font-medium border rounded-md [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    required>
+                <input type="number" placeholder="0" min="0" max="9" maxlength="1" id="otp-3"
+                    class="w-12 h-10 text-2xl text-center font-medium border rounded-md [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    required>
+                <input type="number" placeholder="0" min="0" max="9" maxlength="1" id="otp-4"
+                    class="w-12 h-10 text-2xl text-center font-medium border rounded-md [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    required>
+                <input type="number" placeholder="0" min="0" max="9" maxlength="1" id="otp-5"
+                    class="w-12 h-10 text-2xl text-center font-medium border rounded-md [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    required>
+                <input type="number" placeholder="0" min="0" max="9" maxlength="1" id="otp-6"
+                    class="w-12 h-10 text-2xl text-center font-medium border rounded-md [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                    required>
             </div>
-            <button type="submit" id="submit-btn">verify</button>
-        </form>
-
-
+            <button type="submit" id="submit-btn"
+                class="bg-gray-400 w-full h-10 text-xl rounded-md cursor-pointer hover:bg-gray-500 hover:text-white outline-none">Verify</button>
     </div>
 </body>
+
 
 </html>
