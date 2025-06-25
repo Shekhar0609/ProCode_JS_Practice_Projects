@@ -10,23 +10,27 @@
 </head>
 
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div id="container" class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-        <h2>BMI Calculator</h2>
+    <div id="container" class="bg-white p-3 rounded-lg shadow-md w-full max-w-md flex flex-col items-center gap-4">
+        <h2 class="bg-gray-400 w-full text-xl font-medium text-center p-1">BMI Calculator</h2>
 
-        <div id="height-container">
-            <label for="">Height (cm):</label>
-            <input type="number" id="height" placeholder="Enter your Height(CM)" />
+        <div id="height-container" class="w-full flex flex-col items-center gap-2">
+            <label for="" class="w-full text-center text-md">Height (cm):</label>
+            <input type="number" id="height" placeholder="Enter your Height(CM)"
+                class="w-full border rounded-sm p-2 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
         </div>
 
-        <div id="Weight-container">
-            <label for="">Weight (kg):</label>
-            <input type="number" id="Weight" placeholder="Enter your Weight(KG)" />
+        <div id="Weight-container" class="w-full flex flex-col items-center gap-2">
+            <label for="" class="w-full text-center text-md">Weight (kg):</label>
+            <input type="number" id="Weight" placeholder="Enter your Weight(KG)"
+                class="w-full border rounded-sm p-2 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" />
         </div>
 
-        <button id="calculate-bmi-btn">Calculate BMI</button>
+        <button id="calculate-bmi-btn"
+            class="bg-gray-600 text-white w-full active:scale-96 hover:bg-gray-700 duration-75 transition outline-none ease-in p-1 rounded-md">Calculate
+            BMI</button>
 
         <div id="bmi-result-container">
-            <span id="bmi-result">Your BMI is: 24.6 and Your are Normal</span>
+            <span id="bmi-result">Your BMI is : 24.6 and Your are Normal</span>
         </div>
     </div>
 </body>
