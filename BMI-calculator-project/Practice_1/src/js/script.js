@@ -2,6 +2,7 @@ const heightInCm = document.querySelector("#height-in-cm");
 const weightInKg = document.querySelector("#weight-in-kg");
 const calculateBmiBtn = document.querySelector("#calculate-bmi-btn");
 const resultBmi = document.querySelector("#bmi-result");
+const rangeEl = document.querySelector("#range");
 
 /*both formula same
 meter=170 cm / 100 = 1.7 m
@@ -25,5 +26,29 @@ calculateBmiBtn.addEventListener("click", () => {
   let BMI = weigthInput / (kgToMeter * kgToMeter);
   console.log(BMI);
 
-  resultBmi.innerText = `Your BMI is : ${BMI.toFixed(2)} and Your are Normal`;
+  if (BMI >= 40) {
+    rangeEl.innerText = "Severe Obesity";
+    resultBmi.innerText = `Your BMI is : ${BMI.toFixed(2)} and Your are ${
+      rangeEl.innerText
+    }`;
+  } else if (BMI >= 30 && BMI <= 39.9) {
+    rangeEl.innerText = "Obesity";
+    resultBmi.innerText = `Your BMI is : ${BMI.toFixed(2)} and Your are ${
+      rangeEl.innerText
+    }`;
+  } else if (BMI >= 25 && BMI <= 29.9) {
+    rangeEl.innerText = "Overweigth";
+    resultBmi.innerText = `Your BMI is : ${BMI.toFixed(2)} and Your are ${
+      rangeEl.innerText
+    }`;
+  } else if (BMI >= 18.5 && BMI <= 24.9) {
+    rangeEl.innerText = "Healthy Range";
+    resultBmi.innerText = `Your BMI is : ${BMI.toFixed(2)} and Your are ${
+      rangeEl.innerText
+    }`;
+  } else {
+    resultBmi.innerText = `Your BMI is : ${BMI.toFixed(2)} and Your are ${
+      rangeEl.innerText
+    }`;
+  }
 });
