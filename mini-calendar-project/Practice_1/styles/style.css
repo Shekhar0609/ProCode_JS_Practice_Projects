@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #377a8d;
+  background-color: #68767a;
   color: black;
   display: flex;
   justify-content: center;
@@ -13,7 +13,7 @@ body {
   height: 100vh;
 }
 
-.contaner {
+.container {
   background-color: #e4e4e4;
   border-radius: 5px;
   display: flex;
@@ -22,11 +22,12 @@ body {
   align-items: center;
   overflow: hidden;
   text-align: center;
+  box-shadow: -1px -1px 10px 3px #0000008c, 1px 1px 10px 3px #0000008c;
 }
 
-.monthEl {
+.month {
   background-color: #e01e1e;
-  padding: 10px;
+  padding: 5px 10px;
   font-size: 25px;
   color: white;
 }
